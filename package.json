@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "start": "cross-env NODE_ENV=dev supervisor -w server.js server.js",
+    "start": "cross-env NODE_ENV=dev supervisor -w server.js,src/server server.js",
     "build": "webpack --config config/webpack.prod.config.js & cross-env NODE_ENV=production node server.js"
   },
   "keywords": [],
